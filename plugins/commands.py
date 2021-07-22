@@ -247,12 +247,10 @@ async def help(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("How To Make Me", url="https://t.me/potatospecs"),
-                    InlineKeyboardButton("Maintained By", url="https://t.me/potatospecs")
+                    
                 ],
                 [
-                    InlineKeyboardButton("Want a custom bot?", url="https://t.me/potatospecs"),
-                    InlineKeyboardButton("Contact me!", url="https://t.me/potatospecs")
+                    
                 ]
             ]
         ),
