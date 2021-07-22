@@ -30,32 +30,12 @@ async def cb_handler(client, query):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Command Help", callback_data="help_data")
+                    InlineKeyboardButton("Command Help", url="https://github.com/TroJanzHEX/Unlimited-Filter-Bot)
                 ]
             ]
         )
 
-        await query.message.edit_text(
-            Script.START_MSG.format(query.from_user.mention),
-            reply_markup=keyboard,
-            disable_web_page_preview=True
-        )
-        return
-
-    elif query.data == "help_data":
-        await query.answer()
-        keyboard = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("How to Deploy?", url="https://youtu.be/hkmc3e7U7R4"),
-                    InlineKeyboardButton("About Me", callback_data="about_data")
-                ],
-                [
-                    InlineKeyboardButton("BOT Channel", url="https://t.me/TroJanzHEX"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/TroJanzSupport")
-                ]
-            ]
-        )
+        
 
         await query.message.edit_text(
             Script.HELP_MSG,
